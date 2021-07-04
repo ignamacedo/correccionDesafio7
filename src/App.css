@@ -1,3 +1,42 @@
+
+.nb_conteiner{
+  background-color:#6a8367;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-right:180px;
+  padding-top:0.5px;
+  padding-bottom:0.5px;
+  padding-left:45px;
+  margin-top:25px;
+}
+
+.nb_categorias{
+  text-align:right;
+  
+}
+
+.nb_logo{
+  padding-bottom:0;
+  display:inline;
+  padding-right:450px;
+}
+
+.nb_carro{
+  padding-bottom:0;
+}
+.nb_li{
+  list-style:none;
+  display:inline;
+  padding-right:55px;
+}
+
+.nb_link{
+  text-decoration-line: unset;
+  font-family:Trebuchet MS;
+  font-size:bolder;
+  color:rgb(240, 240, 240);
+  font-size:135%;
+}
+
 .App {
   text-align: center;
 }
