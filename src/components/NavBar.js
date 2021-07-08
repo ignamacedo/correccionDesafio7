@@ -1,35 +1,39 @@
-import react from 'react'; // se llama directamente con react ya que se encuentra dentro de los paquetes modules sin necesidad de referenciar toda la ruta, al apuntar la referencia indica la ruta completa (abrebiaciones de los componentes basicos de los componentes de react
-import carro from './carro.png';
+import react from 'react'; 
+import CartWidget from './CartWidget.js';
+import 'bootstrap/dist/css/bootstrap.css';
+import logo from './logo.png';
 
-//nombre de la funcion siempre en MAYUS
-//para que el componente se vea tengo que exportarlo en el componente App.js
-export default function NavBar(){ // siempre agregar export a la funcion componente, ya que si lo llamamos y no se exporta no nos va a dejar
+
+export default function NavBar(){
     return(
-        <div className="nb_conteiner">
-           <div className="nb_categorias">
-                <ul className="nb_ul">
-                    <li className="nb_li">
-                        <h3 className="nb_logo">
-                            TIENDA E-COMMERCE
-                        </h3>
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+            <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item active">
+                        <a className="nav-link" href="#">Inicio</a>
                     </li>
-                    <li className="nb_li">
-                        <a className="nb_link" href=".">
-                            HOME
-                        </a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Productos</a>
                     </li>
-                    <li className="nb_li">
-                        <a className="nb_link" href=".">
-                            PRODUCTOS
-                        </a>
-                    </li>
-                    <li class="nb_li">
-                        <a className="nb_carro" href=".">
-                            <img src={carro} width="27" height="27"/>
-                        </a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Mas de Cosmos</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    )
+            <div className="mx-auto order-0">
+            <a className="navbar-brand" href="#">
+                    <img src={logo} width="41" height="41"/>
+                    Cosmos Store
+                </a>
+            </div>
+            <div></div>
+            <div className="navbar-collapse collapse w-100 order-2 dual-collapse2 justify-content-end">
+                <ul className="navbar-nav ml-auto">
+                    <button onclick="functionOnClick()" className="btn btn-dark">
+                        <CartWidget/>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    );
 }
