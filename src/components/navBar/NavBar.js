@@ -1,10 +1,8 @@
-import react from 'react'; 
-import CartWidget from './CartWidget.js';
-import 'bootstrap/dist/css/bootstrap.css';
-import logo from './logo.png';
+import React from 'react'; 
+import CartWidget from '../cartwidget/CartWidget';
+import logo from '../../img/logo.png';
 
-
-export default function NavBar(){
+function NavBar(){
     return(
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
@@ -37,3 +35,5 @@ export default function NavBar(){
         </nav>
     );
 }
+
+export default NavBar;

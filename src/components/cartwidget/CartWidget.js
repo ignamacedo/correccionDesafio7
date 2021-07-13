@@ -1,5 +1,5 @@
 import React from 'react';
-import carro from './carro.png';
+import carro from '../../img/carro.png';
 
 export default function CartWidget(props){
     return(
