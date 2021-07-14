@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from '../navBar/NavBar';
 import ItemListContainer from '../itemListContainer/ItemListContainer';
-import ItemCount from '../itemCount/ItemCount';
+import Item from '../item/Item';
 
 function Home(){
     return(
@@ -14,8 +14,8 @@ function Home(){
                 <ItemListContainer 
                     greeting = 'Bienvenidos a Cosmos Store'/>
             </div>
-            <div>
-                <ItemCount/>
+           <div>
+                <Item/>
             </div>
         </div>
         

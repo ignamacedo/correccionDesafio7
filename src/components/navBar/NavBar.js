@@ -27,7 +27,7 @@ function NavBar(){
             <div></div>
             <div className="navbar-collapse collapse w-100 order-2 dual-collapse2 justify-content-end">
                 <ul className="navbar-nav ml-auto">
-                    <button onclick="functionOnClick()" className="btn btn-dark">
+                    <button onClick="functionOnClick()" className="btn btn-dark">
                         <CartWidget/>
                     </button>
                 </ul>
