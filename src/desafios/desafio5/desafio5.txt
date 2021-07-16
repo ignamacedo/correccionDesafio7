@@ -1,0 +1,8 @@
+Crear los componentes Item.js e ItemList.js para mostrar algunos productos en tu ItemListContainer.js
+Los items deben provenir de un llamado a una promise que los resuelva en tiempo diferido (setTimeOut) de 2 segundos para emular retrasos en la red
+
+Aspectos a tener en cuenta:
+Item.js: es un componente destinado a mostrar informnacion breve del producto que el user clickeara luego para acceder a los detalles (lo desarrollaremos mas adelante)
+ItemList.js: es un agrupador de un set de componentes Item.js, deberias incluirlo dentro del ItemListContainer.js (desafio 3)
+implementa un ansyc mock (promise): usa un efecto de montaje para poder emitir un llamado asincronico a un mock estatico de datos que devuelva un conjunto
+de items {id, title, descripcion, price, pictureUrl} en dos segundos para emular retrasos.

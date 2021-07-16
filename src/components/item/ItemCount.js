@@ -1,11 +1,11 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 
-function ItemCount(props){
+function ItemCount({stock, initial}){
    
-    const stockInit = props.stock;
-    const [select, setSelect] = useState(props.initial);
-    const [stockDin, setStockDin] = useState(props.stock);
+    const stockInit = stock;
+    const [select, setSelect] = useState(initial);
+    const [stockDin, setStockDin] = useState(stock);
 
     const onAdd = () =>{
         if(select < stockInit){
