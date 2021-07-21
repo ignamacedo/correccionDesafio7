@@ -1,16 +1,19 @@
 import React from 'react';
 import ItemCount from './ItemCount';
-//import star1 from '../../img/star1.webp';
 
 const Item = ({ items = [] }) => {
   return(
-    <div>
+    <div class="container-fluid">
+		
+    <div className="row">
+        
          {items.lenght === 0 ? 
         <p>LOADING....</p>
         :
-        items.map((item,inx) => (
-            <div className='card text-white bg-dark mb-3' style={{width:'18rem'}}>
-            <img className='card-img-top' src={item.imgUrl} alt={item.alt}/>
+        items.map((item,index) => (
+            <div className="col">
+            <div className='card text-white bg-dark mb-3' style={{width:'18rem',overflow:'hidden'}}>
+            <img className='card-img-top' src={item.imgUrl} alt={item.alt} style={{width:'350px',height:'280px'}}/>
             <div className='card-body'>
                 <h5 className='card-title'>{item.titulo}</h5>
                 <p className='card-text'>{item.descripcion}</p>
@@ -25,7 +28,9 @@ const Item = ({ items = [] }) => {
                     />
             </div>
         </div>
+        </div>
         ))}
+    </div>
     </div>
    );
 }
