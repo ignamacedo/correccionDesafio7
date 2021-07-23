@@ -1,6 +1,7 @@
 import React from 'react'; 
 import CartWidget from './CartWidget';
 import logo from '../../img/logo.png';
+import { Link, NavLink } from 'react-router-dom'
 
 function NavBar(){
     return(
@@ -8,18 +9,29 @@ function NavBar(){
             <div className="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Inicio</a>
+                        <Link to="/" className="nav-link">Inicio</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Productos</a>
+                    <Link to='/Productos' className="nav-link dropdown-toggle">Productos</Link>
+                        <ul>
+                            <li>
+                            <NavLink className="nav-link dropdown-item" to='/Productos/Categoria/estrellas' activeClassName='activo'>Estrellas</NavLink>   
+                            </li>
+                            <li>
+                            <NavLink className="nav-link dropdown-item" to='/Productos/Categoria/planetas' activeClassName='activo'>Planetas</NavLink>
+                            </li>
+                            <li>
+                            <NavLink className="nav-link dropdown-item" to='/Productos/Categoria/satelites' activeClassName='activo'>Satelites</NavLink>
+                            </li>
+                        </ul>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Mas de Cosmos</a>
+                    <Link to="/MasDeCosmos" className="nav-link">Mas de Cosmos</Link>
                     </li>
                 </ul>
             </div>
             <div className="mx-auto order-0">
-            <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="/">
                     <img src={logo} width="41" height="41"/>
                     Cosmos Store
                 </a>
@@ -27,8 +39,8 @@ function NavBar(){
             <div></div>
             <div className="navbar-collapse collapse w-100 order-2 dual-collapse2 justify-content-end">
                 <ul className="navbar-nav ml-auto">
-                    <button onClick="functionOnClick()" className="btn btn-dark">
-                        <CartWidget/>
+                    <button className="btn btn-dark">
+                        <Link to="/Carrito" className="nav-link"><CartWidget/></Link> 
                     </button>
                 </ul>
             </div>

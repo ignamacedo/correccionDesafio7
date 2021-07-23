@@ -4,17 +4,37 @@ import Item from './Item';
 
 const ItemListContainer = (props) => {
 
-    const [items,setItems] = useState([]);
-
-    useEffect(()=>{
-      ItemList().then(res => setItems(res));
-    },[]);
+  const [items,setItems] = useState([]);
   
+  useEffect(()=>{
+    getItems();
+  });
+  
+  const getItems = () => {
+    const call = fetch('https://localhost:4000/productos');
+    call
+    .then(res => {
+        //console.log(res);
+        return res.json();
+    })
+    .then(response => setItems(response));
+}; 
+
+
     return(
-      <>
-        <h1>{props.greeting}</h1>
-        <Item items={items}/>
-      </>
+    <div>
+     <div class="container-fluid">
+        <div className="row">
+          {(items.length === 0) ? 
+            <p>LOADING....</p>
+            :
+            items.map((item,index) => (
+              <Item item={item}/>
+            ))
+            }
+        </div>
+      </div>
+    </div>
     );
 }
 
