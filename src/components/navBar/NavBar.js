@@ -32,7 +32,7 @@ function NavBar(){
             </div>
             <div className="mx-auto order-0">
                 <a className="navbar-brand" href="/">
-                    <img src={logo} width="41" height="41"/>
+                    <img src={logo} width="41" height="41" alt="Logo"/>
                     Cosmos Store
                 </a>
             </div>

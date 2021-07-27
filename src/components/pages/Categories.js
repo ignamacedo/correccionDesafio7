@@ -9,15 +9,15 @@ function Categories(props){
     //usar nombre exacto que se puso en el router
     const {categoriaID} = useParams;
 
-    const getCategoria = async () => {
-        let call = fetch(`https://localhost:4000/producto/categoria/${categoriaID}`);
+   /* const getCategoria = async () => {
+        let call = fetch(`https://localhost:4000/product/category/${categoriaID}`);
         call = await call;
         call = await call.text();
         setProductosCategoria(JSON.parse(call));
-    }
+    }*/
 
     useEffect(()=>{
-        getCategoria();
+        //getCategoria();
     },[categoriaID]);
 
     return(

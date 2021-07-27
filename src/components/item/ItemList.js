@@ -8,7 +8,7 @@ export const ItemList = () =>{
             categoria: "estrellas",
             precio: "$750M",
             alt: "Imagen Producto 3",
-            initial: 0,
+            initial: 1,
             stock: 5
         },
         {
@@ -19,7 +19,7 @@ export const ItemList = () =>{
             categoria: "estrellas",
             precio: "$800M",
             alt: "Imagen Producto 3",
-            initial: 0,
+            initial: 1,
             stock: 3
         },
         {
@@ -30,7 +30,7 @@ export const ItemList = () =>{
             categoria: "estrellas",
             precio: "$70M",
             alt: "Imagen Producto 3",
-            initial: 0,
+            initial: 1,
             stock: 12
         },
         {
@@ -41,7 +41,7 @@ export const ItemList = () =>{
             categoria: "estrellas",
             precio: "$250M",
             alt: "Imagen Producto 4",
-            initial: 0,
+            initial: 1,
             stock: 8
     
         },
@@ -53,7 +53,7 @@ export const ItemList = () =>{
             categoria: "planetas",
             precio: "$1550M",
             alt: "Imagen Producto 5",
-            initial: 0,
+            initial: 1,
             stock: 1
     
         },
@@ -65,7 +65,7 @@ export const ItemList = () =>{
             categoria: "planetas",
             precio: "$2300M",
             alt: "Imagen Producto 6",
-            initial: 0,
+            initial: 1,
             stock: 1
     
         },
@@ -77,7 +77,7 @@ export const ItemList = () =>{
             categoria: "planetas",
             precio: "$3650M",
             alt: "Imagen Producto 7",
-            initial: 0,
+            initial: 1,
             stock: 1
     
         },
@@ -89,7 +89,7 @@ export const ItemList = () =>{
             categoria: "stelites",
             precio: "$2500M",
             alt: "Imagen Producto 8",
-            initial: 0,
+            initial: 1,
             stock: 3
     
         },
@@ -101,7 +101,7 @@ export const ItemList = () =>{
             categoria: "satelites",
             precio: "$1321M",
             alt: "Imagen Producto 9",
-            initial: 0,
+            initial: 1,
             stock: 4
     
         }

@@ -5,7 +5,7 @@ const app = express()
 const port = 4000
 
 app.use(cors());
-app.get('/productos', (req, res) => {
+app.get('/products', (req, res) => {
     var json = fs.readFileSync('./list.json',"utf8",(err,content) =>{
         if (err) {
             console.log(err);
@@ -22,7 +22,7 @@ app.get('/productos', (req, res) => {
     //res.send(JSON.stringify(data));
 
 })
-app.get('/producto/:id', (req,res) => {
+app.get('/product/:id', (req,res) => {
     let id = req.params.id;
     console.log(req.params.id); 
    // id = id.substring(1);
@@ -37,7 +37,7 @@ app.get('/producto/:id', (req,res) => {
     res.send(json);
 
 })
-app.get('/producto/categoria/:categoryID', (req,res) => {
+app.get('/product/category/:categoryID', (req,res) => {
     console.log('estamos Seleccion de categorias');
     let categoria = req.params.categoryID;
     //categoria = id.substring(1);

@@ -1,5 +1,0 @@
--Crear un componente CartWidget.js con un icono y ubicarlo en el NavBar.js y agregar algunos estilos con bootstrap/materialize u otro
-incluirlo en el NavBar.js para que este visible en todfo momento
--Crear un componente contenedor ItemListConteiner.js con una prop greeting y muestra el mensaje dentro del contenedor con el styling iontegrado
-importarlo dentro de App.js y abajo de NavBar.js
-
