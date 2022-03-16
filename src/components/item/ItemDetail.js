@@ -10,7 +10,7 @@ function ItemDetail(){
     const [product, setProduct] = useState([]);
 
     const onAdd = (form) => {
-        //evita comportamientos por defecto HTML, no recarga la pagina con el submit
+        //evita comportamientos por defecto HTML, no recarga la pagina con submit
         form.preventDefault();
         if(form.target[0].value === 1){
             alert('Se agrego ' + form.target[0].value + ' item');
